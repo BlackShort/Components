@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import { img1, img2, img3, img4, img5 } from '../assets';
+import { img1, img2, img3, img4, img5 } from "./assets";
 
-const Carousel = () => {
+const Carousel = ({ img1, img2, img3, img4, img5 }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const intervalRef = useRef(null);
 
